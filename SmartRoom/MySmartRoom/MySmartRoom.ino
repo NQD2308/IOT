@@ -98,14 +98,14 @@ void loop() {
   // Serial.println(lightState);
 
   if (autostatus)
-    Blynk.virtualWrite(V3, "On");   //text V3 On
+    Blynk.virtualWrite(V3, "        On        ");   //text V3 On
   else
-    Blynk.virtualWrite(V3, "Off");   //text V3 Off
+    Blynk.virtualWrite(V3, "        Off        ");   //text V3 Off
 
   if (customstatus)
-    Blynk.virtualWrite(V4, "On");   //text V4 On
+    Blynk.virtualWrite(V4, "        On        ");   //text V4 On
   else
-    Blynk.virtualWrite(V4, "Off");    //text V4 Off
+    Blynk.virtualWrite(V4, "        Off        ");    //text V4 Off
 
   // kiểm tra giá tị Auto 
   if (autoControlValue == 1) {    // Nếu giá trị Auto đang mở thì nút Custome chuyển trạng thái OFF
